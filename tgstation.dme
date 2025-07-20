@@ -10514,7 +10514,6 @@
 #include "modular_zzz\modules\customization\tails.dm"
 #include "modular_zzz\modules\customization\taur_types.dm"
 #include "modular_zzz\modules\customization\markings\plain.dm"
-#include "modular_zzz\modules\customization\species\aiko.dm"
 #include "modular_zzz\modules\digitigrade_cybernetics\code\robot_bodyparts.dm"
 #include "modular_zzz\modules\new_icons\cult\cult_clothing.dm"
 #include "modular_zzz\modules\new_icons\cult\cult_items.dm"

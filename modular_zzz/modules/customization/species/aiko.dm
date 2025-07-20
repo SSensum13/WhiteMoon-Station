@@ -1,6 +1,6 @@
-/datum/species/vulpkanin
-	name = "Vulpkanin"
-	id = SPECIES_VULP
+/datum/species/aiko
+	name = "Aiko"
+	id = SPECIES_MAMMAL
 	inherent_traits = list(
 		TRAIT_ADVANCEDTOOLUSER,
 		TRAIT_CAN_STRIP,
@@ -12,10 +12,9 @@
 	)
 	inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	mutant_bodyparts = list()
-	mutanttongue = /obj/item/organ/tongue/vulpkanin
-	mutanteyes = /obj/item/organ/eyes/vulpkanin
+	mutanttongue = /obj/item/organ/tongue/mammal
 	species_language_holder = /datum/language_holder/vulpkanin
-	payday_modifier = 1.0
+	payday_modifier = 1.25
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | RACE_SWAP | SLIME_EXTRACT
 	examine_limb_id = SPECIES_MAMMAL
 	bodypart_overrides = list(
@@ -27,7 +26,7 @@
 		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/mutant,
 	)
 
-	meat = /obj/item/food/meat/slab/corgi
+	meat = /obj/item/food/meat/slab/bear
 
 /datum/species/vulpkanin/create_pref_unique_perks()
 	var/to_add = list()
@@ -70,10 +69,16 @@
 	return to_add
 /datum/species/vulpkanin/get_default_mutant_bodyparts()
 	return list(
-		"tail" = list("Fox", TRUE),
-		"snout" = list("Mammal, Long", TRUE),
-		"ears" = list("Fox", TRUE),
-		"legs" = list("Normal Legs", FALSE),
+		"tail" = list("Fox (Alt 3)", TRUE),
+		"snout" = list("Husky", TRUE),
+		"horns" = list("None", FALSE),
+		"ears" = list("Husky", TRUE),
+		"legs" = list("Normal Legs", TRUE),
+		"taur" = list("None", FALSE),
+		"fluff" = list("None", FALSE),
+		"wings" = list("None", FALSE),
+		"head_acc" = list("None", FALSE),
+		"neck_acc" = list("None", FALSE),
 	)
 
 /obj/item/organ/tongue/vulpkanin
@@ -82,40 +87,12 @@
 	toxic_foodtypes = TOXIC
 
 
-/datum/species/vulpkanin/randomize_features()
+/datum/species/mammal/randomize_features()
 	var/list/features = ..()
-	var/main_color
-	var/second_color
-	var/random = rand(1,5)
-	//Choose from a variety of mostly brightish, animal, matching colors
-	switch(random)
-		if(1)
-			main_color = "#FFAA00"
-			second_color = "#FFDD44"
-		if(2)
-			main_color = "#FF8833"
-			second_color = "#FFAA33"
-		if(3)
-			main_color = "#FFCC22"
-			second_color = "#FFDD88"
-		if(4)
-			main_color = "#FF8800"
-			second_color = "#FFFFFF"
-		if(5)
-			main_color = "#999999"
-			second_color = "#EEEEEE"
-	features["mcolor"] = main_color
-	features["mcolor2"] = second_color
-	features["mcolor3"] = second_color
+	features["mcolor"] = "#FFFFFF"
+	features["mcolor2"] = "#FFFFFF"
+	features["mcolor3"] = "#FFFFFF"
 	return features
-
-/datum/species/vulpkanin/get_random_body_markings(list/passed_features)
-	var/name = pick("Fox", "Floof", "Floofer")
-	var/datum/body_marking_set/BMS = GLOB.body_marking_sets[name]
-	var/list/markings = list()
-	if(BMS)
-		markings = assemble_body_markings_from_set(BMS, passed_features, src)
-	return markings
 
 /datum/species/dullahan/get_species_description()
 	return "Айко - множество антропоморфных волков и волчиц."
@@ -125,15 +102,15 @@
 	первоклассные офицеры, гениальные медики и лучшие специалисты в области науки. \
 	Удачный эксперимент в области клонирования вышел на Торговую Арену и пользуется спросом по всевозможным направлениям."
 
-/datum/species/vulpkanin/prepare_human_for_preview(mob/living/carbon/human/vulp)
+/datum/species/vulpkanin/prepare_human_for_preview(mob/living/carbon/human/aiko)
 	var/main_color = "#FF8800"
 	var/second_color = "#FFFFFF"
 
-	vulp.dna.features["mcolor"] = main_color
-	vulp.dna.features["mcolor2"] = second_color
-	vulp.dna.features["mcolor3"] = second_color
-	vulp.dna.mutant_bodyparts["snout"] = list(MUTANT_INDEX_NAME = "Mammal, Long", MUTANT_INDEX_COLOR_LIST = list(main_color, main_color, main_color))
-	vulp.dna.mutant_bodyparts["tail"] = list(MUTANT_INDEX_NAME = "Husky", MUTANT_INDEX_COLOR_LIST = list(second_color, main_color, main_color))
-	vulp.dna.mutant_bodyparts["ears"] = list(MUTANT_INDEX_NAME = "Wolf", MUTANT_INDEX_COLOR_LIST = list(main_color, second_color, second_color))
-	regenerate_organs(vulp, src, visual_only = TRUE)
-	vulp.update_body(TRUE)
+	aiko.dna.features["mcolor"] = main_color
+	aiko.dna.features["mcolor2"] = second_color
+	aiko.dna.features["mcolor3"] = second_color
+	aiko.dna.mutant_bodyparts["snout"] = list(MUTANT_INDEX_NAME = "Mammal, Long", MUTANT_INDEX_COLOR_LIST = list(main_color, main_color, main_color))
+	aiko.dna.mutant_bodyparts["tail"] = list(MUTANT_INDEX_NAME = "Husky", MUTANT_INDEX_COLOR_LIST = list(second_color, main_color, main_color))
+	aiko.dna.mutant_bodyparts["ears"] = list(MUTANT_INDEX_NAME = "Wolf", MUTANT_INDEX_COLOR_LIST = list(main_color, second_color, second_color))
+	regenerate_organs(aiko, src, visual_only = TRUE)
+	aiko.update_body(TRUE)
