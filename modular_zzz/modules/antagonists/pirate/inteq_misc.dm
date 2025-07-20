@@ -9,8 +9,8 @@
 
 /obj/machinery/porta_turret/syndicate/irs/inteq/assess_perp(mob/living/carbon/human/perp)
 	if (!check_access(perp.wear_id?.GetID()))
-			return 10
-		return 0
+		return 10
+	return 0
 
 /obj/item/clothing/head/helmet/space/syndicate/black/inteq
 	name = "brown combat space helmet"
@@ -29,7 +29,10 @@
 	helmet_type = /obj/item/clothing/head/helmet/space/syndicate/black/inteq
 
 /obj/machinery/suit_storage_unit/inteq
-	mask_type = /obj/item/clothing/mask/balaclava/breath/inteq
 	storage_type = /obj/item/tank/internals/oxygen/yellow
 	suit_type = /obj/item/clothing/suit/space/syndicate/black/inteq
 	helmet_type = /obj/item/clothing/head/helmet/space/syndicate/black/inteq
+
+/obj/machinery/suit_storage_unit/inteq_mod
+	storage_type = /obj/item/tank/internals/oxygen/yellow
+	mod_type = /obj/item/mod/control/pre_equipped/inteqe

@@ -1,3 +1,29 @@
+/datum/map_template/shuttle/pirate/inteq
+	suffix = "inteq_colossus"
+	name = "pirate ship (PMC InteQ)"
+
+/datum/pirate_gang/inteq
+	name = "PMC InteQ"
+
+	is_heavy_threat = TRUE
+	ship_template_id = "inteq_colossus"
+	ship_name_pool = "imperial_names"
+
+	threat_title = "Сомнительное Заявление"
+	threat_content = "Джамбо, уроды. Это %SHIPNAME. Мы тут пролетали неподалеку и заметили голубков. Расклад прост. \
+		Гоните %PAYOFF кредитов, в противном случае мы не поленимся проложить курс нашего крейсера напрямую через вашу станцию. \
+		<br> \
+		<br> \
+		Центральное Командование сообщает: 'Это крупная угроза. СБ может не справиться. Ополчение не помешает'."
+	arrival_announcement = "Те из вас, кто останутся в живых, будут завидовать мёртвым."
+	possible_answers = list("Мы заплатим!","Игнорировать")
+
+	response_received = "Удачного дня, рабы Корпорации."
+	response_rejected = "Поговорим на языке силы."
+	response_too_late = "Слишком поздно. Мы уже в пути."
+	response_not_enough = "Здесь не хватает кредитов, козлы. Молитесь."
+	announcement_color = "yellow"
+
 /datum/outfit/pirate/inteq
 	name = "PMC InteQ: Pirate"
 
@@ -8,6 +34,7 @@
 	suit = /obj/item/clothing/suit/armor/inteq
 
 	back = /obj/item/storage/backpack/duffelbag/syndie
+	box = /obj/item/storage/box/survival/syndie
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/inteq
 	ears = /obj/item/radio/headset/inteq
 	l_pocket = /obj/item/extinguisher/mini
