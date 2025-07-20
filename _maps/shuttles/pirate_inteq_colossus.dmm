@@ -15,9 +15,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/structure/sign/poster/contraband/inteq{
-	pixel_y = 31
-	},
+/obj/structure/sign/poster/contraband/inteq/directional/north,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/pirate)
 "bA" = (
@@ -29,9 +27,6 @@
 /area/shuttle/pirate)
 "bG" = (
 /obj/item/kirbyplants/random,
-/obj/structure/sign/poster/official/obey{
-	pixel_y = -32
-	},
 /mob/living/basic/pet/gondola/virtual_domain,
 /turf/open/floor/wood,
 /area/shuttle/pirate)
@@ -62,6 +57,7 @@
 /area/shuttle/pirate)
 "cN" = (
 /obj/item/kirbyplants/random,
+/obj/structure/sign/poster/official/obey/directional/north,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/pirate)
 "cR" = (
@@ -122,13 +118,10 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
 	},
-/turf/open/floor/catwalk_floor/iron_dark,
+/obj/structure/cable,
+/turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "fh" = (
-/obj/machinery/firealarm{
-	dir = 8;
-	pixel_x = 28
-	},
 /obj/structure/closet/crate/large,
 /obj/item/card/emag{
 	pixel_y = 5
@@ -148,18 +141,18 @@
 /turf/open/floor/iron/freezer,
 /area/shuttle/pirate)
 "fL" = (
-/obj/structure/sign/poster/contraband/inteq/inteq_no_sex{
-	pixel_y = 31
-	},
+/obj/structure/sign/poster/contraband/inteq/inteq_no_sex/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/pirate)
 "fT" = (
-/obj/machinery/light_switch{
-	dir = 1;
-	pixel_x = 5;
-	pixel_y = -25
+/obj/effect/turf_decal/box/corners{
+	dir = 1
 	},
-/turf/open/floor/wood,
+/obj/effect/turf_decal/box/corners{
+	dir = 8
+	},
+/obj/machinery/firealarm/directional/west,
+/turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "gE" = (
 /obj/machinery/light,
@@ -193,9 +186,7 @@
 /turf/open/floor/engine/hull,
 /area/shuttle/pirate)
 "hO" = (
-/obj/structure/sign/poster/contraband/inteq/inteq_vulp/directional{
-	pixel_y = 33
-	},
+/obj/structure/sign/poster/contraband/inteq/inteq_vulp/directional/north,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/pirate)
 "ig" = (
@@ -222,13 +213,10 @@
 /turf/open/floor/carpet/royalblack,
 /area/shuttle/pirate)
 "jb" = (
-/obj/machinery/firealarm{
-	dir = 1;
-	pixel_y = -25
-	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
+/obj/machinery/firealarm/directional/south,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/pirate)
 "jd" = (
@@ -409,9 +397,6 @@
 /turf/open/floor/carpet/royalblack,
 /area/shuttle/pirate)
 "oa" = (
-/obj/machinery/status_display/shuttle{
-	pixel_x = 32
-	},
 /obj/structure/rack,
 /obj/item/pickaxe/mini,
 /obj/item/pickaxe/mini,
@@ -431,6 +416,7 @@
 	pixel_x = -16;
 	pixel_y = -4
 	},
+/obj/machinery/status_display/shuttle/directional/east,
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
 "ov" = (
@@ -512,9 +498,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "pR" = (
-/obj/machinery/firealarm{
-	pixel_y = 28
-	},
+/obj/machinery/firealarm/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/pirate)
 "pW" = (
@@ -587,9 +571,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "ry" = (
-/obj/machinery/status_display/shuttle{
-	pixel_y = 32
-	},
+/obj/machinery/status_display/shuttle/directional/north,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/pirate)
 "rB" = (
@@ -619,10 +601,8 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/shuttle/pirate)
 "sl" = (
-/obj/structure/sign/poster/official/safety_internals{
-	pixel_x = -32
-	},
-/turf/open/floor/iron/dark,
+/obj/machinery/firealarm/directional/west,
+/turf/open/floor/iron,
 /area/shuttle/pirate)
 "sw" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -654,10 +634,6 @@
 	dir = 4;
 	pixel_x = -25;
 	pixel_y = -10
-	},
-/obj/machinery/firealarm{
-	dir = 4;
-	pixel_x = -28
 	},
 /turf/open/floor/carpet/royalblack,
 /area/shuttle/pirate)
@@ -746,6 +722,7 @@
 /obj/machinery/computer/secure_data/laptop{
 	dir = 4
 	},
+/obj/structure/table/reinforced,
 /turf/open/floor/wood,
 /area/shuttle/pirate)
 "ur" = (
@@ -834,10 +811,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "wy" = (
-/obj/machinery/firealarm{
-	dir = 4;
-	pixel_x = -28
-	},
+/obj/machinery/firealarm/directional/west,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/pirate)
 "wT" = (
@@ -887,10 +861,8 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "yA" = (
-/obj/structure/sign/poster/official/fruit_bowl{
-	pixel_x = 32
-	},
 /obj/machinery/computer/med_data,
+/obj/structure/sign/poster/official/fruit_bowl/directional/east,
 /turf/open/floor/wood,
 /area/shuttle/pirate)
 "yG" = (
@@ -962,6 +934,12 @@
 /obj/structure/window/reinforced/survival_pod/spawner/directional/west,
 /turf/open/floor/iron/white,
 /area/shuttle/pirate)
+"zP" = (
+/obj/machinery/light/red/directional/west,
+/obj/structure/sign/poster/official/safety_internals/directional/west,
+/obj/machinery/firealarm/directional/east,
+/turf/open/floor/iron/dark,
+/area/shuttle/pirate)
 "zV" = (
 /obj/machinery/shuttle_scrambler,
 /turf/open/floor/carpet/royalblack,
@@ -1004,6 +982,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "AL" = (
@@ -1028,10 +1007,8 @@
 	dir = 1
 	},
 /obj/structure/table/reinforced,
-/obj/structure/sign/poster/contraband/inteq/inteq_no_sex{
-	pixel_y = 31
-	},
 /obj/item/uplink/standard,
+/obj/structure/sign/poster/contraband/inteq/inteq_no_sex/directional/north,
 /turf/open/floor/carpet/royalblack,
 /area/shuttle/pirate)
 "Bt" = (
@@ -1087,20 +1064,15 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/machinery/firealarm{
-	pixel_y = 28
-	},
+/obj/machinery/firealarm/directional/north,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/pirate)
 "CH" = (
-/obj/structure/sink{
-	dir = 1;
-	pixel_y = -12
-	},
 /obj/structure/mirror{
 	pixel_y = -32
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/sink/directional/north,
 /turf/open/floor/iron/freezer,
 /area/shuttle/pirate)
 "Dm" = (
@@ -1260,9 +1232,7 @@
 /area/shuttle/pirate)
 "Hl" = (
 /obj/structure/reagent_dispensers/fueltank,
-/obj/machinery/firealarm{
-	pixel_y = 28
-	},
+/obj/machinery/firealarm/directional/north,
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
 "Hp" = (
@@ -1292,22 +1262,25 @@
 /obj/effect/turf_decal/box/corners{
 	dir = 1
 	},
-/obj/structure/sign/departments/cargo{
-	pixel_x = -32
-	},
 /obj/effect/turf_decal/box/corners{
 	dir = 8
 	},
+/obj/structure/sign/departments/cargo/directional/west,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "IH" = (
 /obj/machinery/power/port_gen/pacman/super,
-/obj/machinery/firealarm{
-	pixel_y = 28
-	},
+/obj/machinery/firealarm/directional/north,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Jc" = (
+/turf/open/floor/iron/dark,
+/area/shuttle/pirate)
+"Jo" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/effect/mapping_helpers/apc/syndicate_access,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Jv" = (
@@ -1350,6 +1323,7 @@
 	dir = 8
 	},
 /obj/machinery/suit_storage_unit/inteq,
+/obj/machinery/firealarm/directional/north,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Kn" = (
@@ -1390,16 +1364,10 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Ll" = (
-/obj/machinery/firealarm{
-	dir = 4;
-	pixel_x = -28
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/reagent_dispensers/fueltank,
-/obj/structure/sign/poster/contraband/inteq/inteq_sign{
-	pixel_x = -31
-	},
 /obj/structure/window/reinforced/survival_pod/spawner/directional/north,
+/obj/structure/sign/poster/contraband/inteq/inteq_sign/directional/west,
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
 "Lt" = (
@@ -1548,34 +1516,31 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/shuttle/pirate)
+"OP" = (
+/obj/machinery/firealarm/directional/west,
+/turf/open/floor/wood,
+/area/shuttle/pirate)
 "OQ" = (
-/obj/machinery/status_display/shuttle{
-	pixel_x = 32
-	},
 /obj/structure/table/reinforced,
 /obj/item/storage/medkit/surgery_syndie,
 /obj/item/reagent_containers/spray/cleaner{
 	pixel_x = 8;
 	pixel_y = 4
 	},
+/obj/machinery/status_display/shuttle/directional/east,
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
 "Pn" = (
-/obj/machinery/firealarm{
-	dir = 1;
-	pixel_y = -25
-	},
 /obj/machinery/portable_atmospherics/canister/oxygen,
+/obj/machinery/firealarm/directional/south,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "PI" = (
 /obj/structure/window/reinforced/tinted/frosted{
 	dir = 4
 	},
-/obj/structure/sign/poster/contraband/inteq/inteq_no_sex{
-	pixel_y = 31
-	},
 /obj/effect/mob_spawn/ghost_role/human/pirate/inteq,
+/obj/structure/sign/poster/contraband/inteq/inteq_no_sex/directional/north,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "PS" = (
@@ -1613,6 +1578,7 @@
 /area/shuttle/pirate)
 "Qp" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "QU" = (
@@ -1663,11 +1629,8 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Sn" = (
-/obj/machinery/firealarm{
-	dir = 1;
-	pixel_y = -25
-	},
 /obj/structure/reagent_dispensers/watertank,
+/obj/machinery/firealarm/directional/south,
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
 "Sz" = (
@@ -1685,11 +1648,8 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "SE" = (
-/obj/machinery/firealarm{
-	dir = 8;
-	pixel_x = 28
-	},
 /obj/machinery/light/cold/directional/east,
+/obj/machinery/firealarm/directional/east,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "SN" = (
@@ -1702,9 +1662,7 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/obj/machinery/status_display/shuttle{
-	pixel_x = 32
-	},
+/obj/machinery/status_display/shuttle/directional/east,
 /turf/open/floor/wood,
 /area/shuttle/pirate)
 "Tj" = (
@@ -1738,12 +1696,13 @@
 /area/shuttle/pirate)
 "Uo" = (
 /obj/machinery/light,
-/obj/machinery/firealarm{
-	dir = 1;
-	pixel_y = -25
-	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
+	},
+/obj/machinery/light_switch{
+	dir = 1;
+	pixel_x = 5;
+	pixel_y = -25
 	},
 /turf/open/floor/wood,
 /area/shuttle/pirate)
@@ -1804,14 +1763,16 @@
 /obj/structure/window/reinforced/survival_pod/spawner/directional/west,
 /turf/open/floor/engine/hull,
 /area/shuttle/pirate)
+"Wi" = (
+/obj/machinery/firealarm/directional/west,
+/turf/open/floor/carpet/royalblack,
+/area/shuttle/pirate)
 "WK" = (
-/obj/machinery/status_display/shuttle{
-	pixel_x = -32
-	},
 /obj/effect/turf_decal/box/corners{
 	dir = 4
 	},
 /obj/machinery/loot_locator,
+/obj/machinery/status_display/shuttle/directional/west,
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
 "WP" = (
@@ -1830,12 +1791,10 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Xu" = (
-/obj/structure/sign/poster/contraband/inteq/inteq_sign{
-	pixel_x = -31
-	},
 /obj/structure/rack,
 /obj/item/storage/box/flashes,
 /obj/structure/window/reinforced/survival_pod/spawner/directional/south,
+/obj/structure/sign/poster/contraband/inteq/inteq_sign/directional/west,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "XF" = (
@@ -1843,6 +1802,7 @@
 /obj/item/tank/jetpack/oxygen/harness,
 /obj/item/tank/jetpack/oxygen/harness,
 /obj/item/tank/jetpack/oxygen/harness,
+/obj/structure/sign/departments/cargo/directional/west,
 /turf/open/floor/iron,
 /area/shuttle/pirate)
 "XQ" = (
@@ -1854,13 +1814,11 @@
 /turf/open/floor/wood,
 /area/shuttle/pirate)
 "Ys" = (
-/obj/machinery/status_display/shuttle{
-	pixel_x = -32
-	},
 /obj/structure/sign/poster/official/no_erp{
 	pixel_y = -32
 	},
 /obj/structure/ore_box,
+/obj/machinery/status_display/shuttle/directional/west,
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
 "YU" = (
@@ -1998,7 +1956,7 @@ sw
 uG
 dz
 Sc
-Qp
+Jo
 eD
 Qp
 Fb
@@ -2080,12 +2038,12 @@ zJ
 Rs
 uG
 WK
-WP
+sl
 IC
 Xu
 Mq
 Ll
-RG
+fT
 XF
 Ys
 uG
@@ -2267,7 +2225,7 @@ uG
 lt
 FM
 Ex
-wV
+OP
 WV
 bG
 uG
@@ -2353,7 +2311,7 @@ wV
 OB
 jj
 It
-fT
+wV
 uG
 aR
 Mq
@@ -2476,9 +2434,9 @@ VF
 Kn
 pA
 bA
+zP
 ui
-ui
-sl
+Jc
 Cw
 qV
 qV
@@ -2540,7 +2498,7 @@ Kn
 ql
 BP
 ty
-BP
+Wi
 ta
 qu
 qV
