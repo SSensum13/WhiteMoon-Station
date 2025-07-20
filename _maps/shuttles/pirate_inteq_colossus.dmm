@@ -442,7 +442,6 @@
 	name = "InteQ Collosus";
 	preferred_direction = 4;
 	shuttle_id = "inteq_collosus";
-	width = 35;
 	dir = 2;
 	port_direction = 8;
 	movement_force = list("KNOCKDOWN"=0,"THROW"=0)
@@ -454,7 +453,6 @@
 /obj/docking_port/stationary{
 	name = "Deep Space";
 	shuttle_id = "pirate_home";
-	width = 100;
 	dir = 2
 	},
 /turf/open/floor/iron/dark,
