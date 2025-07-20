@@ -7,6 +7,4 @@
 /obj/effect/spawner/random/melee/New(loc, ...)
 	. = ..()
 	LAZYADD(loot, typesof(/obj/item/melee))
-	for(var/type in typesof(/obj/item/kitchen))
-		if(istype(type, /obj/item/kitchen/knife))
-			LAZYADD(loot, type)
+	LAZYADD(loot, typesof(/obj/item/knife))
