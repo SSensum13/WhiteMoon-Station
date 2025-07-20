@@ -89,9 +89,7 @@
 /turf/open/space/basic,
 /area/shuttle/pirate)
 "dz" = (
-/obj/structure/sign/poster/contraband/inteq{
-	pixel_y = 31
-	},
+/obj/structure/sign/poster/contraband/inteq/directional/north,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "dO" = (
@@ -173,12 +171,10 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "hD" = (
-/obj/structure/window/reinforced/tinted/frosted{
-	dir = 4
-	},
 /obj/effect/mob_spawn/ghost_role/human/pirate/inteq{
 	dir = 1
 	},
+/obj/structure/window/reinforced/tinted/frosted/spawner/directional/east,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "hL" = (
@@ -363,16 +359,10 @@
 /obj/machinery/door/poddoor{
 	id = "colossus_thrusters"
 	},
-/obj/structure/window/reinforced/survival_pod{
-	dir = 1
-	},
-/obj/structure/window/reinforced/survival_pod{
-	dir = 4
-	},
-/obj/structure/window/reinforced/survival_pod{
-	dir = 8
-	},
-/obj/structure/window/reinforced/survival_pod,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/west,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/south,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
+/obj/machinery/door/window/survival_pod/left/directional/east,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "mu" = (
@@ -452,25 +442,21 @@
 	name = "InteQ Collosus";
 	preferred_direction = 4;
 	shuttle_id = "inteq_collosus";
-	height = 19;
 	width = 35;
 	dir = 2;
 	port_direction = 8;
-	dwidth = 17;
 	movement_force = list("KNOCKDOWN"=0,"THROW"=0)
-	},
-/obj/docking_port/stationary{
-	dwidth = 11;
-	height = 100;
-	name = "Deep Space";
-	shuttle_id = "pirate_home";
-	width = 100;
-	dir = 2
 	},
 /obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /obj/structure/fans/tiny,
+/obj/docking_port/stationary{
+	name = "Deep Space";
+	shuttle_id = "pirate_home";
+	width = 100;
+	dir = 2
+	},
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "pB" = (
@@ -505,9 +491,7 @@
 /obj/structure/chair/sofa/left/brown{
 	dir = 1
 	},
-/obj/machinery/computer/security/telescreen/entertainment{
-	pixel_y = -32
-	},
+/obj/machinery/computer/security/telescreen/entertainment/directional/south,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "pX" = (
@@ -645,19 +629,13 @@
 /obj/machinery/door/poddoor{
 	id = "colossus_thrusters"
 	},
-/obj/structure/window/reinforced/survival_pod{
-	dir = 8
-	},
-/obj/machinery/door/window/survival_pod{
-	dir = 4
-	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/west,
+/obj/machinery/door/window/survival_pod/left/directional/east,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "th" = (
-/obj/structure/sign/poster/official/soft_cap_pop_art{
-	pixel_y = 32
-	},
 /obj/machinery/vending/boozeomat/syndicate,
+/obj/structure/sign/poster/official/soft_cap_pop_art/directional/north,
 /turf/open/floor/wood,
 /area/shuttle/pirate)
 "tt" = (
@@ -801,7 +779,7 @@
 /turf/open/floor/carpet/royalblack,
 /area/shuttle/pirate)
 "wj" = (
-/obj/machinery/power/port_gen/pacman/pre_loaded,
+/obj/structure/closet/crate/trashcart,
 /turf/open/floor/iron,
 /area/shuttle/pirate)
 "wo" = (
@@ -828,12 +806,10 @@
 /turf/open/floor/iron/white,
 /area/shuttle/pirate)
 "xO" = (
-/obj/structure/sign/poster/contraband/borg_fancy_2{
-	pixel_x = -32
-	},
 /obj/effect/mob_spawn/ghost_role/human/pirate/inteq{
 	dir = 1
 	},
+/obj/structure/sign/poster/contraband/borg_fancy_2/directional/west,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "xY" = (
@@ -1235,18 +1211,9 @@
 /obj/machinery/firealarm/directional/north,
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
-"Hp" = (
-/obj/structure/chair{
-	dir = 1
-	},
-/obj/structure/sign/poster/contraband/hacking_guide{
-	pixel_y = -32
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/shuttle/pirate)
 "Hw" = (
-/obj/machinery/power/smes/ship,
-/turf/open/floor/iron,
+/obj/structure/sign/poster/contraband/hacking_guide/directional/north,
+/turf/open/floor/iron/freezer,
 /area/shuttle/pirate)
 "It" = (
 /obj/structure/table,
@@ -1536,11 +1503,9 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "PI" = (
-/obj/structure/window/reinforced/tinted/frosted{
-	dir = 4
-	},
 /obj/effect/mob_spawn/ghost_role/human/pirate/inteq,
 /obj/structure/sign/poster/contraband/inteq/inteq_no_sex/directional/north,
+/obj/structure/window/reinforced/tinted/frosted/spawner/directional/east,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "PS" = (
@@ -1675,24 +1640,11 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 32
 	},
-/obj/structure/closet/crate/trashcart,
 /turf/open/floor/iron,
 /area/shuttle/pirate)
 "Ue" = (
-/obj/machinery/door/poddoor{
-	id = "colossus_thrusters"
-	},
-/obj/structure/window/reinforced/survival_pod,
-/obj/structure/window/reinforced/survival_pod{
-	dir = 1
-	},
-/obj/structure/window/reinforced/survival_pod{
-	dir = 4
-	},
-/obj/structure/window/reinforced/survival_pod{
-	dir = 8
-	},
-/turf/open/floor/plating,
+/obj/structure/sign/poster/official/solgov/solgov_nof/directional/north,
+/turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Uo" = (
 /obj/machinery/light,
@@ -1814,11 +1766,9 @@
 /turf/open/floor/wood,
 /area/shuttle/pirate)
 "Ys" = (
-/obj/structure/sign/poster/official/no_erp{
-	pixel_y = -32
-	},
 /obj/structure/ore_box,
 /obj/machinery/status_display/shuttle/directional/west,
+/obj/structure/sign/poster/official/no_erp/directional/south,
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
 "YU" = (
@@ -1888,7 +1838,7 @@ Kn
 Kn
 uG
 tg
-Ue
+lU
 tg
 uG
 Nv
@@ -1908,9 +1858,9 @@ Kn
 (3,1,1) = {"
 Kn
 uG
-Hw
+Tj
 zC
-wj
+Tj
 uG
 Rs
 jY
@@ -1950,7 +1900,7 @@ Kn
 (5,1,1) = {"
 Kn
 uG
-WP
+wj
 uV
 sw
 uG
@@ -2357,9 +2307,9 @@ Uo
 uG
 qV
 zl
-Hp
+jd
 uG
-mQ
+Hw
 mQ
 uG
 fL
@@ -2528,7 +2478,7 @@ xY
 ZR
 Ar
 uG
-Jc
+Ue
 Jc
 Jc
 pW
