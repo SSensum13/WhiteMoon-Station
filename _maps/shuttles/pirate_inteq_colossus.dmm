@@ -86,10 +86,15 @@
 	},
 /obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
-/turf/open/space/basic,
+/turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "dz" = (
 /obj/structure/sign/poster/contraband/inteq/directional/north,
+/obj/machinery/power/port_gen/pacman/super{
+	anchored = 1;
+	sheets = 20
+	},
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "dO" = (
@@ -1146,6 +1151,7 @@
 	pixel_x = -32
 	},
 /obj/machinery/light/cold/directional/west,
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Fg" = (
@@ -1233,8 +1239,13 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "IH" = (
-/obj/machinery/power/port_gen/pacman/super,
 /obj/machinery/firealarm/directional/north,
+/obj/structure/closet/crate/engineering/electrical,
+/obj/item/inducer,
+/obj/item/construction/rcd/loaded/upgraded,
+/obj/item/storage/belt/utility/full/engi,
+/obj/item/clothing/glasses/meson/engine,
+/obj/item/stack/cable_coil,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Jc" = (
@@ -1242,9 +1253,12 @@
 /area/shuttle/pirate)
 "Jo" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable,
-/obj/machinery/power/apc/auto_name/directional/west,
+/obj/machinery/power/apc/auto_name/directional/west{
+	cell_type = /obj/item/stock_parts/power_store/battery/super
+	},
 /obj/effect/mapping_helpers/apc/syndicate_access,
+/obj/structure/cable,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Jv" = (
@@ -1375,6 +1389,14 @@
 /obj/item/mining_scanner,
 /turf/open/floor/iron,
 /area/shuttle/pirate)
+"Mg" = (
+/mob/living/basic/bot/medbot/nukie{
+	name = "Mortimer";
+	faction = list("pirate");
+	desc = "A lowly medibot serving as the Silverscales' live-in manservant/butler/coat rack. They recently discovered it can heal people as well."
+	},
+/turf/open/floor/iron,
+/area/shuttle/pirate)
 "Mk" = (
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/firedoor/border_only{
@@ -1459,6 +1481,7 @@
 	charge = 1e+006
 	},
 /obj/effect/mapping_helpers/apc/cut_AI_wire,
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Oy" = (
@@ -1588,6 +1611,7 @@
 "Sc" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/cold/directional/west,
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Sn" = (
@@ -1686,8 +1710,9 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/pirate)
 "Vi" = (
-/obj/machinery/power/port_gen/pacman,
-/obj/item/wrench,
+/obj/structure/closet/crate/secure/engineering,
+/obj/item/stack/sheet/mineral/uranium/fifty,
+/obj/item/stack/sheet/mineral/uranium/fifty,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Vl" = (
@@ -1780,11 +1805,12 @@
 /turf/open/floor/wood,
 /area/shuttle/pirate)
 "ZE" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
-	dir = 4
+/obj/machinery/power/port_gen/pacman/super{
+	anchored = 1;
+	sheets = 20
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/catwalk_floor/iron_dark,
+/obj/structure/cable,
+/turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "ZH" = (
 /obj/item/kirbyplants/random,
@@ -1906,7 +1932,7 @@ Jo
 eD
 Qp
 Fb
-Jc
+ZE
 uG
 WP
 uV
@@ -1924,7 +1950,7 @@ sK
 Bt
 Bt
 jv
-ZE
+Bt
 AC
 eB
 eB
@@ -1945,7 +1971,7 @@ uG
 IH
 DT
 Vi
-Mq
+eB
 Oi
 Sz
 Pn
@@ -2116,7 +2142,7 @@ UY
 Mq
 cn
 QV
-WP
+Mg
 lA
 uG
 Kn
