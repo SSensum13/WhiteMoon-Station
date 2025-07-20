@@ -750,7 +750,7 @@
 /obj/item/clothing/head/helmet/space/eva,
 /obj/item/clothing/suit/space/eva,
 /obj/structure/closet/secure_closet{
-	req_access_txt = "152"
+	req_access = list("armory")
 	},
 /obj/item/clothing/under/rank/prisoner,
 /obj/item/clothing/shoes/sneakers/orange,
@@ -826,8 +826,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 4;
-	req_access_txt = "152"
+	dir = 4
 	},
 /obj/machinery/door/window/survival_pod/left/directional/north{
 	req_access = "syndicate"
@@ -1796,8 +1795,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 8;
-	req_access_txt = "152"
+	dir = 8
 	},
 /obj/machinery/door/window/survival_pod/left/directional/north{
 	req_access = "syndicate"
