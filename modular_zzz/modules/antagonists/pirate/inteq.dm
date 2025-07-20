@@ -36,7 +36,6 @@
 	back = /obj/item/storage/backpack/duffelbag/syndie
 	box = /obj/item/storage/box/survival/syndie
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/inteq
-	ears = /obj/item/radio/headset/inteq
 	l_pocket = /obj/item/extinguisher/mini
 	r_pocket = /obj/item/tank/internals/emergency_oxygen/double
 
@@ -46,7 +45,7 @@
 		/obj/item/organ/cyberimp/chest/nutriment/plus,
 	)
 
-	implants = list(/obj/item/implant/deathrattle)
+	implants = list(/obj/item/implant/explosive)
 
 /datum/outfit/pirate/inteq/warlord
 	name = "PMC InteQ: Pirate Leader"
@@ -57,7 +56,7 @@
 /obj/effect/mob_spawn/ghost_role/human/pirate/inteq
 	name = "\improper InteQ sleeper"
 	desc = "Продвинутое Спальное Место, от которого несёт запахом железа."
-	density = FALSE
+	fluff_spawn = null
 	you_are_text = "Ты был никем, пока тебе не дали возможность зарабатывать на убийствах. Если приложишь усилия, сможешь добиться успехов!"
 	flavour_text = "Держитесь вместе и разграбьте станцию подчистую!"
 	icon = 'icons/obj/machines/sleeper.dmi'

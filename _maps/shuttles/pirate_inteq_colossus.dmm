@@ -133,6 +133,12 @@
 	pixel_y = -5
 	},
 /obj/structure/window/reinforced/survival_pod/spawner/directional/south,
+/obj/item/card/emag{
+	pixel_y = 5
+	},
+/obj/item/card/emag/doorjack{
+	pixel_y = -5
+	},
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "fK" = (
@@ -412,6 +418,10 @@
 	pixel_y = -4
 	},
 /obj/machinery/status_display/shuttle/directional/east,
+/obj/item/flashlight/seclite{
+	pixel_x = -12;
+	pixel_y = 6
+	},
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
 "ov" = (
@@ -445,20 +455,22 @@
 	},
 /obj/docking_port/mobile{
 	name = "InteQ Collosus";
-	preferred_direction = 4;
-	shuttle_id = "inteq_collosus";
-	dir = 2;
-	port_direction = 8;
-	movement_force = list("KNOCKDOWN"=0,"THROW"=0)
+	preferred_direction = 8;
+	dir = 4;
+	movement_force = list("KNOCKDOWN"=0,"THROW"=0);
+	launch_status = 0
 	},
 /obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /obj/structure/fans/tiny,
 /obj/docking_port/stationary{
-	name = "Deep Space";
+	dir = 4;
+	dwidth = 17;
+	height = 19;
 	shuttle_id = "pirate_home";
-	dir = 2
+	name = "Deep Space";
+	width = 35
 	},
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
@@ -622,6 +634,9 @@
 	pixel_x = -25;
 	pixel_y = -10
 	},
+/obj/machinery/base_alarm/nri_raider{
+	pixel_x = -32
+	},
 /turf/open/floor/carpet/royalblack,
 /area/shuttle/pirate)
 "tf" = (
@@ -673,7 +688,9 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 4
 	},
-/obj/item/dualsaber,
+/obj/item/dualsaber{
+	pixel_x = -5
+	},
 /obj/item/melee/energy/sword/saber,
 /obj/item/melee/energy/sword/saber{
 	pixel_y = 15
@@ -681,6 +698,10 @@
 /obj/item/multitool{
 	pixel_y = -5;
 	pixel_x = 10
+	},
+/obj/item/melee/energy/sword/saber{
+	pixel_y = 15;
+	pixel_x = 15
 	},
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
@@ -888,7 +909,7 @@
 /obj/machinery/power/shuttle_engine/propulsion{
 	dir = 4
 	},
-/turf/template_noop,
+/turf/open/floor/plating,
 /area/shuttle/pirate)
 "zC" = (
 /obj/machinery/atmospherics/components/binary/pump{
@@ -902,7 +923,7 @@
 /obj/machinery/power/shuttle_engine/propulsion{
 	dir = 1
 	},
-/turf/template_noop,
+/turf/open/floor/plating,
 /area/shuttle/pirate)
 "zN" = (
 /obj/machinery/sleeper/syndie{
@@ -1131,10 +1152,15 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 8
 	},
-/obj/item/storage/box/ak12_ammo,
-/obj/item/gun/ballistic/automatic/ar/ak12,
 /obj/machinery/light/cold/directional/west,
 /obj/structure/window/reinforced/survival_pod/spawner/directional/north,
+/obj/item/gun/ballistic/automatic/ar/ak12{
+	pixel_y = 5;
+	pixel_x = 5
+	},
+/obj/item/gun/ballistic/automatic/ar/ak12,
+/obj/item/storage/box/ak12_ammo,
+/obj/item/storage/box/ak12_ammo,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Ex" = (
@@ -1159,7 +1185,7 @@
 	dir = 8
 	},
 /obj/machinery/light/cold/directional/west,
-/obj/machinery/suit_storage_unit/inteq,
+/obj/machinery/suit_storage_unit/inteq_mod,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Fi" = (
@@ -1300,8 +1326,8 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 8
 	},
-/obj/machinery/suit_storage_unit/inteq,
 /obj/machinery/firealarm/directional/north,
+/obj/machinery/suit_storage_unit/inteq_mod,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Kn" = (
@@ -1350,7 +1376,7 @@
 /area/shuttle/pirate)
 "Lt" = (
 /obj/machinery/power/shuttle_engine/propulsion,
-/turf/template_noop,
+/turf/open/floor/plating,
 /area/shuttle/pirate)
 "LD" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
@@ -1766,9 +1792,12 @@
 /area/shuttle/pirate)
 "Xu" = (
 /obj/structure/rack,
-/obj/item/storage/box/flashes,
 /obj/structure/window/reinforced/survival_pod/spawner/directional/south,
 /obj/structure/sign/poster/contraband/inteq/inteq_sign/directional/west,
+/obj/item/storage/box/flashbangs{
+	pixel_y = 10
+	},
+/obj/item/storage/box/flashes,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "XF" = (
@@ -1777,6 +1806,8 @@
 /obj/item/tank/jetpack/oxygen/harness,
 /obj/item/tank/jetpack/oxygen/harness,
 /obj/structure/sign/departments/cargo/directional/west,
+/obj/item/tank/jetpack/oxygen/harness,
+/obj/item/tank/jetpack/oxygen/harness,
 /turf/open/floor/iron,
 /area/shuttle/pirate)
 "XQ" = (
