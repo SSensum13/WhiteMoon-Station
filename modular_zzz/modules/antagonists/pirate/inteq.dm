@@ -45,7 +45,7 @@
 		/obj/item/organ/cyberimp/chest/nutriment/plus,
 	)
 
-	implants = list(/obj/item/implant/explosive)
+	implants = list(/obj/item/implant/explosive, /obj/item/implant/weapons_auth)
 
 /datum/outfit/pirate/inteq/warlord
 	name = "PMC InteQ: Pirate Leader"

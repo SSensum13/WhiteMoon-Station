@@ -796,9 +796,9 @@
 	},
 /obj/machinery/computer/camera_advanced/shuttle_docker/syndicate/pirate{
 	dir = 8;
-	x_offset = 12;
-	y_offset = 5;
-	view_range = 10
+	x_offset = -10;
+	y_offset = -5;
+	view_range = 15
 	},
 /turf/open/floor/carpet/royalblack,
 /area/shuttle/pirate)
