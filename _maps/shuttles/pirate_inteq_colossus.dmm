@@ -20,16 +20,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/pirate)
-"bu" = (
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
-	dir = 4
-	},
-/turf/open/floor/catwalk_floor/iron_dark,
-/area/shuttle/pirate)
 "bA" = (
 /obj/structure/sign/warning/vacuum/external{
 	pixel_x = 32
@@ -50,11 +40,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/pirate)
 "cn" = (
-/obj/structure/window/reinforced/survival_pod{
-	dir = 1
-	},
 /obj/structure/table/optable,
 /obj/structure/curtain,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
 /turf/open/floor/iron/white,
 /area/shuttle/pirate)
 "cp" = (
@@ -125,16 +113,12 @@
 /turf/open/floor/iron/freezer,
 /area/shuttle/pirate)
 "eB" = (
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "eD" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
 	},
@@ -146,13 +130,13 @@
 	pixel_x = 28
 	},
 /obj/structure/closet/crate/large,
-/obj/structure/window/reinforced/survival_pod,
 /obj/item/card/emag{
 	pixel_y = 5
 	},
 /obj/item/card/emag/doorjack{
 	pixel_y = -5
 	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/south,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "fK" = (
@@ -160,7 +144,7 @@
 	pixel_y = 19
 	},
 /obj/structure/curtain,
-/obj/structure/window/reinforced/tinted/frosted,
+/obj/structure/window/reinforced/tinted/frosted/spawner/directional/south,
 /turf/open/floor/iron/freezer,
 /area/shuttle/pirate)
 "fL" = (
@@ -205,9 +189,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "hL" = (
-/obj/structure/window/reinforced/survival_pod{
-	dir = 8
-	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/west,
 /turf/open/floor/engine/hull,
 /area/shuttle/pirate)
 "hO" = (
@@ -261,13 +243,9 @@
 /turf/open/floor/wood,
 /area/shuttle/pirate)
 "jv" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
 /obj/machinery/atmospherics/components/binary/pump/on{
 	name = "Scrubbers to Recycling"
 	},
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
@@ -285,7 +263,6 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
@@ -313,13 +290,11 @@
 /turf/open/floor/wood,
 /area/shuttle/pirate)
 "jY" = (
-/obj/structure/window/reinforced/survival_pod{
-	dir = 8
-	},
 /obj/machinery/porta_turret/syndicate/energy{
 	dir = 10;
 	faction = list("pirate")
 	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/west,
 /turf/open/floor/engine/hull,
 /area/shuttle/pirate)
 "kp" = (
@@ -343,9 +318,7 @@
 /turf/open/floor/iron,
 /area/shuttle/pirate)
 "kY" = (
-/obj/structure/window/reinforced/survival_pod{
-	dir = 4
-	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/east,
 /turf/open/floor/engine/hull,
 /area/shuttle/pirate)
 "la" = (
@@ -489,7 +462,6 @@
 /obj/machinery/door/airlock/external{
 	name = "InteQ Colossus Airlock"
 	},
-/obj/structure/fans/tiny,
 /obj/docking_port/mobile{
 	name = "InteQ Collosus";
 	preferred_direction = 4;
@@ -512,11 +484,12 @@
 /obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/structure/fans/tiny,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "pB" = (
 /obj/machinery/piratepad,
-/obj/structure/window/reinforced/survival_pod,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/south,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "pC" = (
@@ -560,22 +533,16 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "pY" = (
-/obj/structure/window/reinforced/survival_pod{
-	dir = 1
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/cold/directional/east,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/pirate)
 "ql" = (
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
 /obj/machinery/door/poddoor{
 	id = "colossus_windows";
 	name = "Window Shield"
 	},
-/obj/structure/grille,
 /obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
@@ -594,11 +561,10 @@
 /area/shuttle/pirate)
 "qH" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable,
-/obj/structure/fans/tiny,
 /obj/machinery/door/poddoor{
 	id = "colossus_starboard"
 	},
+/obj/structure/fans/tiny/shield,
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
 "qJ" = (
@@ -620,14 +586,6 @@
 /obj/item/radio,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
-"rf" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/dark,
-/area/shuttle/pirate)
 "ry" = (
 /obj/machinery/status_display/shuttle{
 	pixel_y = 32
@@ -647,9 +605,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "rD" = (
-/obj/machinery/door/window/survival_pod{
-	dir = 8
-	},
+/obj/machinery/door/window/survival_pod/left/directional/west,
 /turf/open/floor/engine/hull,
 /area/shuttle/pirate)
 "rO" = (
@@ -673,11 +629,9 @@
 /turf/open/floor/iron,
 /area/shuttle/pirate)
 "sB" = (
-/obj/structure/window/reinforced/survival_pod{
-	dir = 1
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/vomit/old,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/pirate)
 "sK" = (
@@ -688,7 +642,6 @@
 /obj/machinery/door/airlock/hatch{
 	name = "Engineering"
 	},
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
@@ -732,18 +685,8 @@
 /turf/open/floor/wood,
 /area/shuttle/pirate)
 "tt" = (
-/obj/machinery/door/window/survival_pod{
-	dir = 4
-	},
+/obj/machinery/door/window/survival_pod/left/directional/east,
 /turf/open/floor/engine/hull,
-/area/shuttle/pirate)
-"tu" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/fans/tiny,
-/obj/machinery/door/poddoor{
-	id = "colossus_starboard"
-	},
-/turf/open/floor/pod/dark,
 /area/shuttle/pirate)
 "ty" = (
 /obj/machinery/turretid{
@@ -760,7 +703,6 @@
 /obj/machinery/atmospherics/pipe/layer_manifold{
 	dir = 4
 	},
-/obj/structure/cable,
 /turf/open/floor/iron,
 /area/shuttle/pirate)
 "tL" = (
@@ -815,17 +757,14 @@
 /obj/machinery/computer/piratepad_control{
 	dir = 1
 	},
-/obj/structure/window/reinforced/survival_pod,
-/obj/structure/window/reinforced/survival_pod{
-	dir = 4
-	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/east,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/south,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "uG" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/shuttle/pirate)
 "uV" = (
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
@@ -847,7 +786,6 @@
 /obj/machinery/door/airlock/hatch{
 	name = "Engineering"
 	},
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
@@ -887,7 +825,6 @@
 /area/shuttle/pirate)
 "wj" = (
 /obj/machinery/power/port_gen/pacman/pre_loaded,
-/obj/structure/cable,
 /turf/open/floor/iron,
 /area/shuttle/pirate)
 "wo" = (
@@ -912,10 +849,8 @@
 /turf/open/floor/wood,
 /area/shuttle/pirate)
 "xk" = (
-/obj/structure/window/reinforced/survival_pod{
-	dir = 1
-	},
 /obj/machinery/computer/operating,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
 /turf/open/floor/iron/white,
 /area/shuttle/pirate)
 "xO" = (
@@ -928,7 +863,6 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "xY" = (
-/obj/structure/cable,
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
 	},
@@ -947,9 +881,8 @@
 	dir = 4;
 	req_access_txt = "152"
 	},
-/obj/machinery/door/window/survival_pod{
-	dir = 1;
-	req_access_txt = "syndicate"
+/obj/machinery/door/window/survival_pod/left/directional/north{
+	req_access = "syndicate"
 	},
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
@@ -989,17 +922,12 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/shuttle/pirate)
 "zd" = (
-/obj/structure/window/reinforced/survival_pod{
-	dir = 1
-	},
-/obj/structure/window/reinforced/survival_pod{
-	dir = 4
-	},
 /obj/machinery/autolathe/hacked,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/east,
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
 "zl" = (
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
@@ -1017,7 +945,6 @@
 	dir = 8;
 	name = "engine fuel pump"
 	},
-/obj/structure/cable,
 /obj/machinery/space_heater,
 /turf/open/floor/iron,
 /area/shuttle/pirate)
@@ -1031,12 +958,8 @@
 /obj/machinery/sleeper/syndie{
 	dir = 4
 	},
-/obj/structure/window/reinforced/survival_pod{
-	dir = 1
-	},
-/obj/structure/window/reinforced/survival_pod{
-	dir = 8
-	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/west,
 /turf/open/floor/iron/white,
 /area/shuttle/pirate)
 "zV" = (
@@ -1077,7 +1000,6 @@
 /obj/machinery/power/terminal{
 	dir = 4
 	},
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
@@ -1094,7 +1016,6 @@
 /obj/machinery/door/airlock/hatch{
 	name = "Hangar"
 	},
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
@@ -1114,10 +1035,6 @@
 /turf/open/floor/carpet/royalblack,
 /area/shuttle/pirate)
 "Bt" = (
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
@@ -1128,7 +1045,7 @@
 /obj/machinery/door/poddoor{
 	id = "colossus_starboard"
 	},
-/obj/structure/fans/tiny,
+/obj/structure/fans/tiny/shield,
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
 "BP" = (
@@ -1141,15 +1058,13 @@
 /area/shuttle/pirate)
 "Cq" = (
 /obj/structure/rack,
-/obj/structure/window/reinforced/survival_pod,
-/obj/structure/window/reinforced/survival_pod{
-	dir = 8
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/storage/barricade{
 	pixel_y = 5
 	},
 /obj/item/storage/barricade,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/west,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/south,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Cw" = (
@@ -1165,6 +1080,7 @@
 /obj/machinery/door/airlock/external{
 	name = "InteQ Colossus Airlock"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "CA" = (
@@ -1209,18 +1125,15 @@
 /area/shuttle/pirate)
 "Dx" = (
 /obj/machinery/door/firedoor,
-/obj/structure/grille,
 /obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
 /turf/open/space/basic,
 /area/shuttle/pirate)
 "DG" = (
-/obj/structure/window/reinforced/survival_pod{
-	dir = 4
-	},
 /obj/machinery/porta_turret/syndicate/energy{
 	dir = 6;
 	faction = list("pirate")
 	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/east,
 /turf/open/floor/engine/hull,
 /area/shuttle/pirate)
 "DH" = (
@@ -1236,9 +1149,6 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/pirate)
 "DT" = (
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
 /obj/structure/closet/crate{
 	icon_state = "radiation";
 	name = "fuel crate"
@@ -1271,22 +1181,11 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 8
 	},
-/obj/structure/window/reinforced/survival_pod{
-	dir = 1
-	},
 /obj/item/storage/box/ak12_ammo,
 /obj/item/gun/ballistic/automatic/ar/ak12,
 /obj/machinery/light/cold/directional/west,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
 /turf/open/floor/iron/dark,
-/area/shuttle/pirate)
-"Eu" = (
-/obj/machinery/door/poddoor{
-	id = "colossus_windows";
-	name = "Window Shield"
-	},
-/obj/structure/grille,
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
-/turf/open/floor/plating,
 /area/shuttle/pirate)
 "Ex" = (
 /obj/structure/extinguisher_cabinet{
@@ -1354,8 +1253,7 @@
 /area/shuttle/pirate)
 "GZ" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/window/survival_pod{
-	dir = 1;
+/obj/machinery/door/window/survival_pod/left/directional/north{
 	req_access = "syndicate"
 	},
 /turf/open/floor/mineral/plastitanium/red,
@@ -1378,7 +1276,6 @@
 /area/shuttle/pirate)
 "Hw" = (
 /obj/machinery/power/smes/ship,
-/obj/structure/cable,
 /turf/open/floor/iron,
 /area/shuttle/pirate)
 "It" = (
@@ -1441,7 +1338,6 @@
 /obj/machinery/door/airlock/hatch{
 	name = "Engineering"
 	},
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
@@ -1490,7 +1386,7 @@
 /obj/machinery/door/poddoor{
 	id = "colossus_port"
 	},
-/obj/structure/fans/tiny,
+/obj/structure/fans/tiny/shield,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Ll" = (
@@ -1500,12 +1396,10 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/reagent_dispensers/fueltank,
-/obj/structure/window/reinforced/survival_pod{
-	dir = 1
-	},
 /obj/structure/sign/poster/contraband/inteq/inteq_sign{
 	pixel_x = -31
 	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
 "Lt" = (
@@ -1530,9 +1424,6 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 4
 	},
-/obj/structure/window/reinforced/survival_pod{
-	dir = 1
-	},
 /obj/item/gun/microfusion/mcr01/syndie{
 	pixel_y = 5
 	},
@@ -1541,6 +1432,7 @@
 /obj/item/gun/microfusion/mcr01/syndie{
 	pixel_y = -5
 	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Mc" = (
@@ -1564,7 +1456,6 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/pirate)
 "Mq" = (
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
@@ -1578,9 +1469,7 @@
 /area/shuttle/pirate)
 "MI" = (
 /obj/structure/reagent_dispensers/watertank,
-/obj/structure/window/reinforced/survival_pod{
-	dir = 1
-	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
 "MZ" = (
@@ -1634,7 +1523,6 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Oi" = (
-/obj/structure/cable,
 /obj/machinery/power/smes/engineering{
 	charge = 1e+006
 	},
@@ -1782,15 +1670,6 @@
 /obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
-"Su" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable,
-/obj/machinery/door/poddoor{
-	id = "colossus_starboard"
-	},
-/obj/structure/fans/tiny,
-/turf/open/floor/pod/dark,
-/area/shuttle/pirate)
 "Sz" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /obj/effect/decal/cleanable/dirt,
@@ -1802,7 +1681,7 @@
 /obj/machinery/door/poddoor{
 	id = "colossus_port"
 	},
-/obj/structure/fans/tiny,
+/obj/structure/fans/tiny/shield,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "SE" = (
@@ -1886,18 +1765,16 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "UY" = (
-/obj/structure/window/reinforced/survival_pod,
 /obj/machinery/vending/medical/syndicate/cybersun,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/south,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "UZ" = (
-/obj/structure/window/reinforced/survival_pod{
-	dir = 1
-	},
 /obj/structure/table,
 /obj/item/storage/box/donkpockets,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/cold/directional/west,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/pirate)
 "Vi" = (
@@ -1906,13 +1783,11 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Vl" = (
-/obj/structure/window/reinforced/survival_pod{
-	dir = 4
-	},
 /obj/machinery/porta_turret/syndicate/energy{
 	dir = 5;
 	faction = list("pirate")
 	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/east,
 /turf/open/floor/engine/hull,
 /area/shuttle/pirate)
 "VF" = (
@@ -1922,13 +1797,11 @@
 /turf/closed/wall/mineral/plastitanium,
 /area/shuttle/pirate)
 "VK" = (
-/obj/structure/window/reinforced/survival_pod{
-	dir = 8
-	},
 /obj/machinery/porta_turret/syndicate/energy{
 	dir = 9;
 	faction = list("pirate")
 	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/west,
 /turf/open/floor/engine/hull,
 /area/shuttle/pirate)
 "WK" = (
@@ -1957,12 +1830,12 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Xu" = (
-/obj/structure/window/reinforced/survival_pod,
 /obj/structure/sign/poster/contraband/inteq/inteq_sign{
 	pixel_x = -31
 	},
 /obj/structure/rack,
 /obj/item/storage/box/flashes,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/south,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "XF" = (
@@ -2002,10 +1875,6 @@
 /turf/open/floor/wood,
 /area/shuttle/pirate)
 "ZE" = (
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
@@ -2024,9 +1893,8 @@
 	dir = 8;
 	req_access_txt = "152"
 	},
-/obj/machinery/door/window/survival_pod{
-	dir = 1;
-	req_access_txt = "syndicate"
+/obj/machinery/door/window/survival_pod/left/directional/north{
+	req_access = "syndicate"
 	},
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
@@ -2110,7 +1978,7 @@ uG
 uG
 uG
 uG
-Eu
+ql
 uG
 uG
 uG
@@ -2149,7 +2017,7 @@ ov
 uV
 uV
 sK
-rf
+Bt
 Bt
 jv
 ZE
@@ -2173,7 +2041,7 @@ uG
 IH
 DT
 Vi
-bu
+Mq
 Oi
 Sz
 Pn
@@ -2283,7 +2151,7 @@ WP
 WP
 WP
 Jc
-tu
+qH
 Kn
 Kn
 Kn
@@ -2325,7 +2193,7 @@ zN
 QV
 OC
 Xf
-Su
+qH
 Kn
 Kn
 Kn
@@ -2416,7 +2284,7 @@ aL
 uG
 "}
 (19,1,1) = {"
-Eu
+ql
 Fz
 wV
 Mt
@@ -2539,10 +2407,10 @@ uG
 fL
 GZ
 ur
-Eu
+ql
 "}
 (25,1,1) = {"
-Eu
+ql
 XQ
 ZB
 uo
@@ -2560,7 +2428,7 @@ uG
 LP
 sB
 lH
-Eu
+ql
 "}
 (26,1,1) = {"
 uG
@@ -2643,7 +2511,7 @@ nh
 Jc
 Jc
 ra
-Eu
+ql
 Kn
 "}
 (30,1,1) = {"
@@ -2669,7 +2537,7 @@ Kn
 "}
 (31,1,1) = {"
 Kn
-Eu
+ql
 BP
 ty
 BP
@@ -2711,7 +2579,7 @@ Kn
 "}
 (33,1,1) = {"
 Kn
-Eu
+ql
 nW
 KJ
 BP
@@ -2727,7 +2595,7 @@ SE
 Jc
 Jc
 RJ
-Eu
+ql
 Kn
 "}
 (34,1,1) = {"
@@ -2754,9 +2622,9 @@ Kn
 (35,1,1) = {"
 Kn
 SN
-Eu
-Eu
-Eu
+ql
+ql
+ql
 Rs
 zq
 Kn
@@ -2766,9 +2634,9 @@ Kn
 Kn
 zq
 Rs
-Eu
-Eu
-Eu
+ql
+ql
+ql
 yY
 Kn
 "}
