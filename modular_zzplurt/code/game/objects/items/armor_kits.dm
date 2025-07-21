@@ -94,8 +94,8 @@
 	armor_text = "elite Nanotrasen blueshield helmet"
 	target_prefix = "aegis"
 
-/proc/armor_is_better_or_equal(curr_armor, actual_armor)
+/obj/item/armorkit/proc/armor_is_better_or_equal(curr_armor, actual_armor)
 	for(var/curr_stat in ARMOR_LIST_DAMAGE())
-		if(curr_armor.get_rating(curr_stat) < actual_armor.get_rating(curr_stat))
+		if(curr_armor:get_rating(curr_stat) < actual_armor:get_rating(curr_stat))
 			return FALSE
 	return TRUE

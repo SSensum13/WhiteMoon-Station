@@ -84,3 +84,4 @@
 
 /obj/item/clothing/suit/costume/striped_sweater
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
+	body_parts_covered = CHEST|ARMS
