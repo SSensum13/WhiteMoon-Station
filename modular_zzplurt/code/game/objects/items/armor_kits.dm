@@ -23,20 +23,20 @@
 	var/used = FALSE
 
 	if(!isobj(interacting_with))
-		return NONE
+		return FALSE
 
 	var/obj/item/target = interacting_with
 
 	if(!(target.slot_flags & target_slot))
 		to_chat(user, "<span class = 'notice'>Вы не можете улучшить [target] при помощи [src].</span>")
-		return NONE
+		return FALSE
 
 	var/obj/item/clothing/C = target
 	var/datum/armor/curr_armor = C.get_armor()
 
 	if(armor_is_better_or_equal(curr_armor, actual_armor))
 		to_chat(user, "<span class = 'notice'>[C] уже имеет такую или лучшую броню.</span>")
-		return NONE
+		return FALSE
 
 	for(var/curr_stat in ARMOR_LIST_DAMAGE())
 		if(!curr_armor.get_rating(curr_stat) || curr_armor.get_rating(curr_stat) < actual_armor.get_rating(curr_stat))
@@ -53,7 +53,7 @@
 		return ITEM_INTERACT_SUCCESS
 
 	to_chat(user, "<span class = 'notice'>Тебе больше не нужно улучшать [C].")
-	return NONE
+	return FALSE
 
 /obj/item/armorkit/helmet
 	name = "rampart headgear kit"
@@ -95,7 +95,7 @@
 	target_prefix = "aegis"
 
 /obj/item/armorkit/proc/armor_is_better_or_equal(curr_armor, actual_armor)
-	for(var/curr_stat in ARMOR_LIST_DAMAGE())
-		if(curr_armor:get_rating(curr_stat) < actual_armor:get_rating(curr_stat))
+	for(var/stat in ARMOR_LIST_DAMAGE())
+		if(curr_armor.get_rating(stat) > 0)
+			to_chat(user, "<span class='notice'>[C] уже имеет броню и не может быть усилен этим комплектом.</span>")
 			return FALSE
-	return TRUE
