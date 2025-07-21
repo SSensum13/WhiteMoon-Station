@@ -10507,6 +10507,7 @@
 #include "modular_zzz\modules\antagonists\pirate\inteq.dm"
 #include "modular_zzz\modules\antagonists\pirate\inteq_misc.dm"
 #include "modular_zzz\modules\antagonists\traitor\uplink\uplink_items\dangerous.dm"
+#include "modular_zzz\modules\antagonists\zombie\zombie_event.dm"
 #include "modular_zzz\modules\cme\code\cme.dm"
 #include "modular_zzz\modules\crowbar_hit_plitka\code.dm"
 #include "modular_zzz\modules\customization\ears.dm"
