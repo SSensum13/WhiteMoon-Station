@@ -36,49 +36,42 @@
 // 		SPECIES_PERK_TYPE = SPECIES_POSITIVE_PERK,
 // 		SPECIES_PERK_ICON = "heart",
 // 		SPECIES_PERK_NAME = "Empathic Nature",
-// 		SPECIES_PERK_DESC = "Aiko have a natural ability to understand and connect with others emotionally, making them excellent mediators and friends.",
+// 		SPECIES_PERK_DESC = "Айко обладают природной способностью понимать и чувствовать эмоции других, что делает их отличными посредниками и друзьями.",
 // 	))
 
 // 	to_add += list(list(
 // 		SPECIES_PERK_TYPE = SPECIES_POSITIVE_PERK,
 // 		SPECIES_PERK_ICON = "eye",
 // 		SPECIES_PERK_NAME = "Enhanced Night Vision",
-// 		SPECIES_PERK_DESC = "Aiko eyes are adapted for low-light conditions, allowing them to see clearly in darkness.",
+// 		SPECIES_PERK_DESC = "Глаза Айко приспособлены к условиям низкой освещённости, позволяя им хорошо видеть в темноте.",
 // 	))
 
 // 	to_add += list(list(
 // 		SPECIES_PERK_TYPE = SPECIES_POSITIVE_PERK,
 // 		SPECIES_PERK_ICON = "shoe-prints",
 // 		SPECIES_PERK_NAME = "Hardened Soles",
-// 		SPECIES_PERK_DESC = "Aiko have tough, calloused feet that can withstand rough terrain and hot surfaces.",
+// 		SPECIES_PERK_DESC = "Айко имеют крепкие, мозолистые ступни, устойчивые к неровной поверхности и горячим поверхностям.",
 // 	))
 
 // 	to_add += list(list(
 // 		SPECIES_PERK_TYPE = SPECIES_POSITIVE_PERK,
 // 		SPECIES_PERK_ICON = "hand-fist",
 // 		SPECIES_PERK_NAME = "Strong Grip",
-// 		SPECIES_PERK_DESC = "Aiko have naturally strong hands and arms, making them excellent at climbing and holding onto things.",
+// 		SPECIES_PERK_DESC = "Айко обладают природной силой рук и кистей, что делает их отличными скалолазами и позволяет крепко держаться за предметы.",
 // 	))
 
 // 	to_add += list(list(
 // 		SPECIES_PERK_TYPE = SPECIES_NEGATIVE_PERK,
 // 		SPECIES_PERK_ICON = "stomach",
 // 		SPECIES_PERK_NAME = "High Metabolism",
-// 		SPECIES_PERK_DESC = "Aiko burn through energy quickly and need to eat more frequently than other species.",
+// 		SPECIES_PERK_DESC = "Айко быстро расходуют энергию и нуждаются в пище чаще, чем представители других видов.",
 // 	))
 
 // 	to_add += list(list(
-// 		SPECIES_PERK_TYPE = SPECIES_NEGATIVE_PERK,
-// 		SPECIES_PERK_ICON = "biohazard",
-// 		SPECIES_PERK_NAME = "Toxic Sensitivity",
-// 		SPECIES_PERK_DESC = "Aiko are particularly sensitive to toxic substances and take more damage from them.",
-// 	))
-
-// 	to_add += list(list(
-// 		SPECIES_PERK_TYPE = SPECIES_NEGATIVE_PERK,
-// 		SPECIES_PERK_ICON = "tshirt",
-// 		SPECIES_PERK_NAME = "Fabric Aversion",
-// 		SPECIES_PERK_DESC = "Aiko find most fabrics uncomfortable and prefer not to wear clothing when possible.",
+// 		SPECIES_PERK_TYPE = SPECIES_POSITIVE_PERK,
+// 		SPECIES_PERK_ICON = "lightbulb",
+// 		SPECIES_PERK_NAME = "Боязнь темноты",
+// 		SPECIES_PERK_DESC = "Айко испытывают страх перед темнотой и всегда стараются устранить любую тьму вокруг себя, поддерживая освещённость в окружающем пространстве.",
 // 	))
 
 // 	return to_add
