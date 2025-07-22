@@ -34,9 +34,10 @@
 	var/obj/item/clothing/C = target
 	var/datum/armor/curr_armor = C.get_armor()
 
-	if(armor_is_better_or_equal(curr_armor, actual_armor))
-		to_chat(user, "<span class = 'notice'>[C] уже имеет такую или лучшую броню.</span>")
-		return FALSE
+	for(var/stat in ARMOR_LIST_DAMAGE())
+		if(curr_armor.get_rating(stat) > 0)
+			to_chat(user, "<span class='notice'>[C] уже имеет броню.</span>")
+			return FALSE
 
 	for(var/curr_stat in ARMOR_LIST_DAMAGE())
 		if(!curr_armor.get_rating(curr_stat) || curr_armor.get_rating(curr_stat) < actual_armor.get_rating(curr_stat))
@@ -93,9 +94,3 @@
 
 	armor_text = "elite Nanotrasen blueshield helmet"
 	target_prefix = "aegis"
-
-/obj/item/armorkit/proc/armor_is_better_or_equal(curr_armor, actual_armor)
-	for(var/stat in ARMOR_LIST_DAMAGE())
-		if(curr_armor.get_rating(stat) > 0)
-			to_chat(user, "<span class='notice'>[C] уже имеет броню и не может быть усилен этим комплектом.</span>")
-			return FALSE
