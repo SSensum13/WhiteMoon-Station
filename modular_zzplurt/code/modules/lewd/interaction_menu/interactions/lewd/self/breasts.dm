@@ -89,7 +89,10 @@
 		var/milk_multiplier = 1
 		if(breasts.internal_fluid_maximum > 0)
 			milk_multiplier = 1 + (3 * (breasts.reagents.total_volume / breasts.internal_fluid_maximum))
+
+		var/transfer_amount = rand(2, 6 * milk_multiplier)
 		var/datum/reagents/R = new(breasts.internal_fluid_maximum)
+		breasts.reagents.trans_to(R, transfer_amount)
 		R.trans_to(user, R.total_volume, transferred_by = user)
 		qdel(R)
 
