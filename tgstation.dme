@@ -10371,7 +10371,6 @@
 #include "modular_zzz\code\datums\quirks\negative_quirks\gifted.dm"
 #include "modular_zzz\code\datums\quirks\neutral_quirks\hungry.dm"
 #include "modular_zzz\code\datums\quirks\positive_qurks\jumper.dm"
-#include "modular_zzz\code\datums\quirks\positive_qurks\undead.dm"
 #include "modular_zzz\code\datums\ruins\space.dm"
 #include "modular_zzz\code\datums\station_traits\neutral_trait.dm"
 #include "modular_zzz\code\datums\station_traits\positive_trait.dm"
