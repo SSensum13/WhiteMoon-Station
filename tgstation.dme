@@ -10477,6 +10477,7 @@
 #include "modular_zzz\code\modules\projectiles\projectile.dm"
 #include "modular_zzz\code\modules\projectiles\energy\thermal.dm"
 #include "modular_zzz\code\modules\projectiles\guns\ballistic\automatic.dm"
+#include "modular_zzz\code\modules\projectiles\guns\ballistic\zealstar.dm"
 #include "modular_zzz\code\modules\projectiles\guns\pistol\nt.dm"
 #include "modular_zzz\code\modules\reagents\reagent_dispenser.dm"
 #include "modular_zzz\code\modules\research\xenobiology\xenobiology.dm"

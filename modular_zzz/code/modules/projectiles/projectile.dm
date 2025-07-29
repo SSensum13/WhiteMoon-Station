@@ -18,3 +18,6 @@
 
 /obj/projectile/bullet/arrow
 	speed = 2.5
+
+/obj/projectile/bullet/pellet/shotgun_buckshot/magnum
+	damage = 10

@@ -96,3 +96,49 @@
 		/obj/item/pen/red/security,
 		/obj/item/gun/microfusion,
 	)
+
+/obj/item/mod/control/pre_equipped/responsory
+	theme = /datum/mod_theme/responsory
+	applied_cell = /obj/item/stock_parts/power_store/cell/bluespace
+	applied_modules = list(
+		/obj/item/mod/module/storage/bluespace,
+		/obj/item/mod/module/welding,
+		/obj/item/mod/module/emp_shield,
+		/obj/item/mod/module/magnetic_harness,
+		/obj/item/mod/module/flashlight,
+		/obj/item/mod/module/quick_cuff,
+		/obj/item/mod/module/jetpack/advanced,
+	)
+
+/datum/mod_theme/responsory
+	armor_type = /datum/armor/mod_theme_corporate
+
+/datum/mod_theme/responsory/budget
+	armor_type = /datum/armor/mod_theme_responsory
+
+/obj/item/mod/control/pre_equipped/responsory/budget
+	theme = /datum/mod_theme/responsory/budget
+	applied_modules = list(
+		/obj/item/mod/module/storage/large_capacity,
+		/obj/item/mod/module/welding,
+		/obj/item/mod/module/emp_shield,
+		/obj/item/mod/module/magnetic_harness,
+		/obj/item/mod/module/flashlight,
+		/obj/item/mod/module/quick_cuff,
+	)
+
+/obj/item/mod/control/pre_equipped/responsory/budget/commander
+	insignia_type = /obj/item/mod/module/insignia/commander
+	additional_modules = /obj/item/mod/module/power_kick
+
+/obj/item/mod/control/pre_equipped/responsory/budget/security
+	insignia_type = /obj/item/mod/module/insignia/security
+	additional_modules = /obj/item/mod/module/pepper_shoulders
+
+/obj/item/mod/control/pre_equipped/responsory/budget/engineer
+	insignia_type = /obj/item/mod/module/insignia/engineer
+	additional_modules = /obj/item/mod/module/rad_protection
+
+/obj/item/mod/control/pre_equipped/responsory/budget/medic
+	insignia_type = /obj/item/mod/module/insignia/medic
+	additional_modules = /obj/item/mod/module/quick_carry
