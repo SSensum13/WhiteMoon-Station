@@ -63,7 +63,7 @@
 
 /obj/item/ammo_casing/energy/laser/thunder
 	projectile_type = /obj/projectile/bullet/rocket/heap
-	e_cost = LASER_SHOTS(15, STANDARD_CELL_CHARGE * 2)
+	e_cost = LASER_SHOTS(2, STANDARD_CELL_CHARGE * 2)
 	fire_sound = 'sound/items/weapons/gun/general/rocket_launch.ogg'
 
 /datum/laser_weapon_mode/thunder
@@ -90,7 +90,7 @@
 	pellets = 8
 	variance = 10
 	e_cost = LASER_SHOTS(25, STANDARD_CELL_CHARGE * 2)
-	fire_sound = 'sound/items/weapons/pulse.ogg'
+	fire_sound = 'modular_skyrat/modules/modular_weapons/sounds/shotgun_heavy.ogg'
 
 /datum/laser_weapon_mode/hammer
 	name = "Hammer"
