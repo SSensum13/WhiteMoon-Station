@@ -453,17 +453,18 @@
 /obj/machinery/door/airlock/external{
 	name = "InteQ Colossus Airlock"
 	},
-/obj/docking_port/mobile{
-	name = "InteQ Collosus";
-	preferred_direction = 8;
-	dir = 4;
-	movement_force = list("KNOCKDOWN"=0,"THROW"=0);
-	launch_status = 0
-	},
 /obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /obj/structure/fans/tiny,
+/obj/docking_port/mobile/pirate{
+	launch_status = 0;
+	movement_force = list("KNOCKDOWN"=0,"THROW"=0);
+	name = "InteQ Collosus";
+	port_direction = 2;
+	dir = 4;
+	preferred_direction = 4
+	},
 /obj/docking_port/stationary{
 	dir = 4;
 	dwidth = 17;
@@ -538,8 +539,8 @@
 	id_tag = "piratebridgebolt";
 	name = "Bridge"
 	},
-/obj/effect/mapping_helpers/airlock/access/all/syndicate/leader,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /turf/open/floor/carpet/royalblack,
 /area/shuttle/pirate)
 "qH" = (
@@ -1097,7 +1098,7 @@
 "Dx" = (
 /obj/machinery/door/firedoor,
 /obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
-/turf/open/space/basic,
+/turf/open/floor/plating,
 /area/shuttle/pirate)
 "DG" = (
 /obj/machinery/porta_turret/syndicate/energy{
@@ -1154,12 +1155,7 @@
 	},
 /obj/machinery/light/cold/directional/west,
 /obj/structure/window/reinforced/survival_pod/spawner/directional/north,
-/obj/item/gun/ballistic/automatic/ar/ak12{
-	pixel_y = 5;
-	pixel_x = 5
-	},
 /obj/item/gun/ballistic/automatic/ar/ak12,
-/obj/item/storage/box/ak12_ammo,
 /obj/item/storage/box/ak12_ammo,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
@@ -1396,15 +1392,10 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 4
 	},
-/obj/item/gun/microfusion/mcr01/syndie{
-	pixel_y = 5
-	},
-/obj/item/gun/microfusion/mcr01/syndie,
 /obj/machinery/light/cold/directional/east,
-/obj/item/gun/microfusion/mcr01/syndie{
-	pixel_y = -5
-	},
 /obj/structure/window/reinforced/survival_pod/spawner/directional/north,
+/obj/item/storage/toolbox/guncase/c20r,
+/obj/item/storage/box/smgm45_ammo,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Mc" = (
@@ -1581,7 +1572,7 @@
 	},
 /obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
-/turf/open/space/basic,
+/turf/open/floor/mineral/plastitanium,
 /area/shuttle/pirate)
 "Qm" = (
 /obj/machinery/light/cold/directional/north,

@@ -8,6 +8,7 @@
 	righthand_file = 'modular_zzz/icons/mob/inhands/weapons/righthand.dmi'
 	accepted_magazine_type = /obj/item/ammo_box/magazine/ak12
 	fire_sound = 'modular_zzz/sounds/ak12_fire.ogg'
+	burst_delay = 2
 
 /obj/item/gun/ballistic/automatic/ar/ak12/update_icon_state()
 	. = ..()
@@ -100,7 +101,6 @@
 /obj/item/storage/box/ak12_ammo/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/ammo_box/magazine/ak12 = 3,
-		/obj/item/ammo_box/magazine/ak12/ap = 2,
 		/obj/item/ammo_box/magazine/ak12/hp = 2,
 		)
 	generate_items_inside(items_inside,src)

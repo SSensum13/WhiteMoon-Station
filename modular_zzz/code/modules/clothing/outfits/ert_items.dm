@@ -33,6 +33,16 @@
 		)
 	generate_items_inside(items_inside,src)
 
+/obj/item/storage/box/smgm45_ammo
+	name = "box with ammo"
+	icon_state = "secbox"
+
+/obj/item/storage/box/smgm45_ammo/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/ammo_box/magazine/smgm45 = 5,
+		)
+	generate_items_inside(items_inside,src)
+
 /obj/item/melee/energy/sword/ert
 	name = "Standart Energy Sword"
 	desc = "To serve the Mega-Corporation."
