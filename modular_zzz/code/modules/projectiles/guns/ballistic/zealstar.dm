@@ -35,7 +35,9 @@
 	тактику пользователя, хотя операторы отмечают его «избыточную инициативу». При попадании в руки противника \
 	система инициирует коллапс ядра (радиус поражения - 100 метров)."
 
-/obj/item/gun/energy/modular_laser_rifle/zealstar/give_manufacturer_examine()
+/obj/item/gun/energy/modular_laser_rifle/zealstar/New(loc, ...)
+	. = ..()
+	RemoveElement(/datum/element/manufacturer_examine, COMPANY_CYBERSUN)
 	AddElement(/datum/element/manufacturer_examine, COMPANY_NANOTRASEN)
 
 /// SPEAR - ПАРАЛИЗАТОР ///
