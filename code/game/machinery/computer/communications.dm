@@ -146,7 +146,7 @@ GLOBAL_VAR_INIT(cops_arrived, FALSE)
 		caller_card.use_charge(user)
 		addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(summon_battlecruiser), caller_card.team), rand(20 SECONDS, 1 MINUTES))
 		playsound(src, 'sound/machines/terminal/terminal_alert.ogg', 50, FALSE)
-		priority_announce("Attention crew: deep-space sensors detect a Syndicate battlecruiser-class signature subspace rift forming near your station. Estimated time until arrival: three to five minutes.", "[command_name()] High-Priority Update") //SKYRAT EDIT ADDITION: announcement on battlecruiser call
+		priority_announce("Внимание, экипаж: датчики дальнего радиуса действия зафиксировали формирование подпространственного разлома, характерного для линейных крейсеров, рядом с вашей станцией. Расчетное время прибытия: от трёх до пяти минут.", "[command_name()]: Сверх-Важное Объявление") //SKYRAT EDIT ADDITION: announcement on battlecruiser call
 		return TRUE
 
 	if(obj_flags & EMAGGED)
@@ -321,7 +321,7 @@ GLOBAL_VAR_INIT(cops_arrived, FALSE)
 			nuke_request(reason, user)
 			to_chat(user, span_notice("Request sent."))
 			user.log_message("has requested the nuclear codes from CentCom with reason \"[reason]\"", LOG_SAY)
-			priority_announce("The codes for the on-station nuclear self-destruct have been requested by [user]. Confirmation or denial of this request will be sent shortly.", "Nuclear Self-Destruct Codes Requested", SSstation.announcer.get_rand_report_sound())
+			priority_announce("Коды для ядерного самоуничтожения на станции были запрошены [user]. Подтверждение или отклонение этого запроса будет отправлено в ближайшее время.", "Запрошены коды ядерного самоуничтожения", SSstation.announcer.get_rand_report_sound())
 			playsound(src, 'sound/machines/terminal/terminal_prompt.ogg', 50, FALSE)
 			COOLDOWN_START(src, important_action_cooldown, IMPORTANT_ACTION_COOLDOWN)
 		if ("restoreBackupRoutingData")
@@ -927,15 +927,15 @@ GLOBAL_VAR_INIT(cops_arrived, FALSE)
 
 		if(HACK_FUGITIVES) // Triggers fugitives, which can cause confusion / chaos as the crew decides which side help
 			priority_announce(
-				"Attention crew: sector monitoring reports a jump-trace from an unidentified vessel destined for your system. Prepare for probable contact.",
-				"[command_name()] High-Priority Update",
+				"Внимание, экипаж: система мониторинга сектора сообщает о наличии следа неопознанного судна, направляющегося в вашу систему. Приготовьтесь к вероятному контакту.",
+				"[command_name()]: Сверх-Важное Объявление",
 			)
 			SSdynamic.force_run_midround(/datum/dynamic_ruleset/midround/from_ghosts/fugitives)
 
 		if(HACK_SLEEPER) // Trigger one or multiple sleeper agents with the crew (or for latejoining crew)
 			priority_announce(
-				"Attention crew, it appears that someone on your station has hijacked your telecommunications and broadcasted an unknown signal.",
-				"[command_name()] High-Priority Update",
+				"Внимание, экипаж! Похоже, кто-то на вашей станции взломал вашу связь и передал неизвестный сигнал.",
+				"[command_name()]: Сверх-Важное Объявление",
 			)
 			var/max_number_of_sleepers = clamp(round(length(GLOB.alive_player_list) / 40), 1, 3)
 			if(!SSdynamic.force_run_midround(/datum/dynamic_ruleset/midround/from_living/traitor, forced_max_cap = max_number_of_sleepers))

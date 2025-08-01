@@ -12,8 +12,11 @@
 		ANNOUNCER_OUTBREAK5 = 'modular_skyrat/modules/alerts/sound/alerts/outbreak5.ogg',
 		ANNOUNCER_OUTBREAK6 = 'modular_skyrat/modules/alerts/sound/alerts/alert3.ogg',
 		ANNOUNCER_OUTBREAK7 = 'modular_skyrat/modules/alerts/sound/alerts/outbreak7.ogg',
-		ANNOUNCER_POWEROFF = 'modular_skyrat/modules/alerts/sound/alerts/poweroff.ogg',
-		ANNOUNCER_POWERON = 'modular_skyrat/modules/alerts/sound/alerts/poweron.ogg',
+		ANNOUNCER_POWEROFF = list('modular_skyrat/modules/alerts/sound/alerts/poweroff.ogg', 'modular_skyrat/modules/alerts/sound/alerts/poweroff2.ogg', \
+		'modular_skyrat/modules/alerts/sound/alerts/poweroff2.ogg', 'modular_skyrat/modules/alerts/sound/alerts/poweroff2.ogg', \
+		'modular_skyrat/modules/alerts/sound/alerts/poweroff2.ogg', 'modular_skyrat/modules/alerts/sound/alerts/poweroff2.ogg', \
+		'modular_skyrat/modules/alerts/sound/alerts/poweroff2.ogg', 'modular_zzz/sounds/announcer/poweroff_boomer.ogg')
+		ANNOUNCER_POWERON = list('modular_skyrat/modules/alerts/sound/alerts/poweron1.ogg', 'modular_skyrat/modules/alerts/sound/alerts/poweron2.ogg'),
 		ANNOUNCER_RADIATION = 'modular_skyrat/modules/alerts/sound/alerts/radiation.ogg',
 		ANNOUNCER_RADIATIONPASSED = 'modular_skyrat/modules/alerts/sound/alerts/radpassed.ogg',
 		ANNOUNCER_SHUTTLECALLED = 'modular_skyrat/modules/alerts/sound/alerts/crew_shuttle_called.ogg',
