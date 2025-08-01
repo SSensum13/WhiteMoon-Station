@@ -76,9 +76,9 @@
 	var/iondepartment = pick_list("ion_laws.json", "отделы")
 	var/list/players = list()
 	var/datum/mind/owner = new_owner
-	for(var/i in GLOB.joined_player_list) // BLUEMOON EDIT - было for(var/mob/living/carbon/human/player in GLOB.player_list)
-		var/mob/player = get_mob_by_ckey(i) // BLUEMOON ADD
-		if(!player || !player.mind || player.mind.assigned_role == player.mind.special_role || player.client.inactivity > 10 MINUTES || player.mind == owner) //BLUEMOON ADD рантаймы с нулями без !players
+	for(var/i in GLOB.joined_player_list)
+		var/mob/player = get_mob_by_ckey(i)
+		if(!player || !player.mind || player.client.inactivity > 10 MINUTES || player.mind == owner) //BLUEMOON ADD рантаймы с нулями без !players
 			continue
 		players += player.real_name
 	var/random_player = "Капитан"
