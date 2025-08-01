@@ -32,12 +32,9 @@
 	fade_kitchen(fade_in = TRUE)
 
 /datum/round_event/aurora_caelus/start()
-	if(!prob(1) && !check_holidays(APRIL_FOOLS))
-		return
-
-	for(var/mob/living/carbon/human/player in GLOB.player_list)
+	for(var/mob/living/carbon/human/player in GLOB.alive_mob_list)
 		if(is_station_level(player.z))
-			player.apply_status_effect(/datum/status_effect/pacify, 60 SECONDS)
+			player.apply_status_effect(/datum/status_effect/pacify, 123 SECONDS)
 
 	var/list/human_blacklist = list()
 	for(var/area/station/service/kitchen/affected_area in GLOB.areas)
