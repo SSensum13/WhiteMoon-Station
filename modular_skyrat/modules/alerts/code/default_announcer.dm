@@ -15,7 +15,7 @@
 		ANNOUNCER_POWEROFF = list('modular_skyrat/modules/alerts/sound/alerts/poweroff.ogg', 'modular_skyrat/modules/alerts/sound/alerts/poweroff2.ogg', \
 		'modular_skyrat/modules/alerts/sound/alerts/poweroff2.ogg', 'modular_skyrat/modules/alerts/sound/alerts/poweroff2.ogg', \
 		'modular_skyrat/modules/alerts/sound/alerts/poweroff2.ogg', 'modular_skyrat/modules/alerts/sound/alerts/poweroff2.ogg', \
-		'modular_skyrat/modules/alerts/sound/alerts/poweroff2.ogg', 'modular_zzz/sounds/announcer/poweroff_boomer.ogg')
+		'modular_skyrat/modules/alerts/sound/alerts/poweroff2.ogg', 'modular_zzz/sounds/announcer/poweroff_boomer.ogg'),
 		ANNOUNCER_POWERON = list('modular_skyrat/modules/alerts/sound/alerts/poweron1.ogg', 'modular_skyrat/modules/alerts/sound/alerts/poweron2.ogg'),
 		ANNOUNCER_RADIATION = 'modular_skyrat/modules/alerts/sound/alerts/radiation.ogg',
 		ANNOUNCER_RADIATIONPASSED = 'modular_skyrat/modules/alerts/sound/alerts/radpassed.ogg',
