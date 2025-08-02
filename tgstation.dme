@@ -7213,7 +7213,6 @@
 #include "modular_skyrat\master_files\code\modules\research\techweb\all_nodes.dm"
 #include "modular_skyrat\master_files\code\modules\research\techweb\protolathe.dm"
 #include "modular_skyrat\master_files\code\modules\shuttle\shuttle.dm"
-#include "modular_skyrat\master_files\code\modules\shuttle\shuttle_events\meteors.dm"
 #include "modular_skyrat\master_files\code\modules\surgery\surgery.dm"
 #include "modular_skyrat\master_files\code\modules\surgery\bodyparts\robot_bodyparts.dm"
 #include "modular_skyrat\master_files\code\modules\surgery\organs\tongue.dm"
