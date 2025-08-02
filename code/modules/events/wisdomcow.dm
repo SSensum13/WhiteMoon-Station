@@ -1,5 +1,5 @@
 /datum/round_event_control/wisdomcow
-	name = "Мудрая корова"
+	name = "Wisdom Cow"
 	typepath = /datum/round_event/wisdomcow
 	max_occurrences = 1
 	weight = 20

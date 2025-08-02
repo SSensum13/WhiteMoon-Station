@@ -35,7 +35,7 @@
 /datum/round_event/grey_tide/announce(fake)
 	if(fake)
 		severity = rand(1,3)
-	priority_announce("Вирус Gr3y.T1d3 обнаружен в подпрограммах шифрования безопасной консервации [station_name()]. Уровень угрозы [severity]. Рекомендуется участие ИИ станции.", "ВНИМАНИЕ: Угроза Безопасности")
+	priority_announce("Вирус Gr3y.T1d3 обнаружен в подпрограммах шифрования безопасной консервации [station_name()]. Уровень угрозы [severity]. Рекомендуется участие ИИ станции.", "ВНИМАНИЕ: Угроза Безопасности", ANNOUNCER_GREYTIDE)
 
 /datum/round_event/grey_tide/start()
 	if(!length(grey_tide_areas))
