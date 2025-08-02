@@ -85,3 +85,12 @@
 /obj/item/clothing/suit/costume/striped_sweater
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
 	body_parts_covered = CHEST|ARMS
+
+/obj/item/clothing/suit/fixer_costume
+	name = "Fixer Costume"
+	desc = "Fixer Costume."
+	icon_state = "fixer_costume"
+	worn_icon_state = "fixer_costume"
+	icon = 'modular_zzz/icons/obj/clothing/suits.dmi'
+	worn_icon = 'modular_zzz/icons/mob/clothing/suits.dmi'
+	supports_variations_flags = CLOTHING_NO_VARIATION

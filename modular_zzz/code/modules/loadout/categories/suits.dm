@@ -92,3 +92,8 @@
 	name = "Dark Montur"
 	item_path = /obj/item/clothing/suit/montur
 	ckeywhitelist = list("enigma418")
+
+/datum/loadout_item/suit/fixer_costume
+	name = "Fixer Costume"
+	item_path = /obj/item/clothing/suit/fixer_costume
+	ckeywhitelist = list("mercreaper")

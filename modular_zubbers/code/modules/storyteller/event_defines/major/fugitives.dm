@@ -167,7 +167,7 @@
 		if(HUNTER_PACK_RUSSIAN)
 			announcement_text_list += "Zdraviya zhelaju, [GLOB.station_name] crew. We are coming to your station."
 			announcement_text_list += "There is a criminal aboard. We will arrest them and return them to the gulag. That's good, yes?"
-			announcement_title += "Командование НРИ"
+			announcement_title += "Командование СССП"
 		if(HUNTER_PACK_BOUNTY)
 			announcement_text_list += "[GLOB.station_name]. Одна из наших целей оказалась на территории вашей станции. Мы скоро приедем за ним."
 			announcement_text_list += "Давайте сделаем это быстро. Если не хотите проблем, держитесь от нас подальше."
