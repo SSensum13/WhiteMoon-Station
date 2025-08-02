@@ -51,6 +51,7 @@
 		/obj/item/restraints/handcuffs,
 		/obj/item/assembly/flash,
 		/obj/item/melee/baton,
+		/obj/item/gun,
 	)
 	variants = list(
 		"vanguard" = list(
