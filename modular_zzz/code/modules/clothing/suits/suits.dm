@@ -94,3 +94,30 @@
 	icon = 'modular_zzz/icons/obj/clothing/suits.dmi'
 	worn_icon = 'modular_zzz/icons/mob/clothing/suits.dmi'
 	supports_variations_flags = CLOTHING_NO_VARIATION
+
+/obj/item/clothing/suit/armor/bluesec_jacket
+	name = "Bluesec Jacket"
+	desc = "Bluesec Jacket."
+	icon_state = "bluesec_jacket"
+	icon = 'modular_zzz/icons/obj/clothing/suits.dmi'
+	worn_icon = 'modular_zzz/icons/mob/clothing/suits.dmi'
+	supports_variations_flags = CLOTHING_NO_VARIATION
+
+/obj/item/clothing/suit/armor/bluesec_jacket/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/toggle_icon)
+
+/obj/item/clothing/suit/armor/bluesec_jacket/winter
+	name = "Winter Bluesec Jacket"
+	desc = "Winter Bluesec Jacket."
+	icon_state = "bluesec_winter_jacket"
+
+/obj/item/clothing/suit/armor/bluesec_jacket/reaper_jacket
+	name = "Old Guard Jacket"
+	desc = "Old Guard Jacket."
+	icon_state = "reaper_jacket"
+
+/obj/item/clothing/suit/armor/bluesec_jacket/winter/reaper_jacket
+	name = "Old Winter Guard Jacket"
+	desc = "Old Winter Guard Jacket."
+	icon_state = "reaper_winter_jacket"
