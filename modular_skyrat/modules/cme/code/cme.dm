@@ -165,7 +165,7 @@
 			INVOKE_ASYNC(SSsecurity_level, TYPE_PROC_REF(/datum/controller/subsystem/security_level/, minimum_security_level), SEC_LEVEL_ORANGE, TRUE, FALSE)
 
 	var/area/loc_area_name = get_area(spawnpoint)
-	minor_announce("WARNING! [uppertext(intensity)] PULSE EXPECTED IN: [loc_area_name.name]", "Solar Flare Log:")
+	minor_announce("ВНИМАНИЕ! БУБЛИК ОБНАРУЖЕН В: [loc_area_name.name]. ИНТЕНСИВНОСТЬ: [uppertext(intensity)].", "ВНИМАНИЕ: Солнечная Вспышка:")
 	switch(intensity)
 		if(CME_MINIMAL)
 			var/obj/effect/cme/spawnedcme = new(spawnpoint)
