@@ -6473,6 +6473,7 @@
 #include "code\modules\surgery\organs\_organ.dm"
 #include "code\modules\surgery\organs\autosurgeon.dm"
 #include "code\modules\surgery\organs\helpers.dm"
+#include "modular_zzz\modules\ear_protect_temp_fix\code\ear_protect_fix.dm"
 #include "code\modules\surgery\organs\organ_movement.dm"
 #include "code\modules\surgery\organs\external\_visual_organs.dm"
 #include "code\modules\surgery\organs\external\restyling.dm"
