@@ -13,6 +13,8 @@ SUBSYSTEM_DEF(gamemode)
 	var/datum/storyteller/storyteller
 	/// Result of the storyteller vote. Defaults to the guide.
 	var/voted_storyteller = /datum/storyteller/default
+	/// Storyteller displayed to the statpanel, depending if the round is secret or not
+	var/statpanel_display = "N/A"
 	/// List of all the storytellers. Populated at init. Associative from type
 	var/list/storytellers = list()
 	/// Next process for our storyteller. The wait time is STORYTELLER_WAIT_TIME
@@ -718,6 +720,7 @@ SUBSYSTEM_DEF(gamemode)
 	if(storyteller) // If this is true, then an admin bussed one, don't overwrite it
 		log_dynamic("Roundstart storyteller has been set by admins to [storyteller.name], the vote was not considered.")
 		return
+
 	var/datum/storyteller/storyteller_pick
 	if(!voted_storyteller)
 		storyteller_pick = pick(storytellers)
@@ -730,6 +733,15 @@ SUBSYSTEM_DEF(gamemode)
 			voted_storyteller = processed_storyteller
 		else
 			stack_trace("Processing storyteller vote results failed! That's less than ideal. Using backup non-weighted result [voted_storyteller]")
+
+	if(voted_storyteller == /datum/storyteller/dynamic)
+		var/list/players = list()
+
+		for(var/mob/dead/new_player/player as anything in GLOB.player_list)
+			players += player
+
+		voted_storyteller = pick_dynamic_storyteller_type_by_chaos(players)
+		log_dynamic("Dynamic storyteller type selected: [voted_storyteller]")
 
 	set_storyteller(voted_storyteller)
 	if(vote_datum)

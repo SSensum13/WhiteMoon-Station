@@ -61,7 +61,7 @@
 	lefthand_file = 'modular_skyrat/modules/implants/icons/razorclaws_lefthand.dmi'
 	icon_state = "wolverine"
 	inhand_icon_state = "wolverine"
-	var/knife_force = 10
+	var/knife_force = 15
 	w_class = WEIGHT_CLASS_BULKY
 	var/knife_wound_bonus = 5
 	var/cutter_force = CUTTER_FORCE

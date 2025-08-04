@@ -430,6 +430,16 @@
 	id = "chitter2"
 	soundpath = 'modular_zubbers/code/modules/blooper/voice/bloopers/kazooie/chitter1.ogg'
 
+/datum/blooper/merp
+	name = "Merp"
+	id = "merp"
+	soundpath = 'modular_skyrat/modules/emotes/sound/voice/merp.ogg'
+
+/datum/blooper/weh
+	name = "Weh"
+	id = "weh"
+	soundpath = 'modular_skyrat/modules/emotes/sound/voice/weh.ogg'
+
 /datum/blooper/xenohiss
 	name = "Xenohiss"
 	id = "Xenohiss"

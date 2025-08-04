@@ -72,7 +72,7 @@
 
 /// Alerts the crew about the siphon
 /obj/machinery/shuttle_scrambler/proc/send_notification()
-	priority_announce("Data theft signal detected; source registered on local GPS units.")
+	priority_announce("Обнаружен сигнал кражи данных; источник зарегистрирован локальными GPS-устройствами.")
 
 /// Switches off the siphon
 /obj/machinery/shuttle_scrambler/proc/toggle_off(mob/user)
@@ -411,7 +411,7 @@
 	return
 
 /datum/export/pirate/ransom
-	cost = 3000
+	cost = 30000
 	unit_name = "hostage"
 	export_types = list(/mob/living/carbon/human)
 
@@ -462,7 +462,7 @@
 	return_pod.return_from_capture(prisoner)
 
 /datum/export/pirate/parrot
-	cost = 2000
+	cost = 20000
 	unit_name = "alive parrot"
 	export_types = list(/mob/living/basic/parrot)
 
